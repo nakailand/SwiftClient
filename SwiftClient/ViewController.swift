@@ -23,8 +23,8 @@ class ViewController: UIViewController {
                 Session.rx_response(Hello())
                     .subscribeNext { [unowned self] response in
                         self.label.text = response
-                }
-                .addDisposableTo(self.disposeBag)
+                    }
+                    .addDisposableTo(self.disposeBag)
             }
             .addDisposableTo(disposeBag)
         // Do any additional setup after loading the view, typically from a nib.

@@ -41,7 +41,6 @@ extension ADRequest {
     }
 }
 
-// 全ての質問を取得する
 struct Hello: ADRequest {
     typealias Response = String
     
